@@ -1,9 +1,9 @@
 from __future__ import print_function
-from board import Board
-from apple import Apple
+from lib.board import Board
+from lib.apple import Apple
 from mock import MagicMock, patch
 from random import randint
-from snake import Snake
+from lib.snake import Snake
 from tinydb import TinyDB, Query
 import math
 import pygame
@@ -123,8 +123,8 @@ class Game:
             self.HEIGHT = self.BLOCK_SIZE * self.ROWS
 
             self.BACKGROUND_GRID = [
-                [8 if x % 2 == y % 2 else 0 for x in xrange(self.COLUMNS)]
-                for y in xrange(self.ROWS)
+                [8 if x % 2 == y % 2 else 0 for x in range(self.COLUMNS)]
+                for y in range(self.ROWS)
             ]
 
             self.pygame.init()
@@ -304,8 +304,8 @@ class Game:
             start_x, start_y = start_position
             end_x, end_y = start_position
 
-            for i in xrange(start_y, end_y):
-                for j in xrange(start_x, end_x):
+            for i in range(start_y, end_y):
+                for j in range(start_x, end_x):
                     if start_x == end_x or start_y == end_y:
                         self.sensehat.set_pixel(j, i, color)
 
