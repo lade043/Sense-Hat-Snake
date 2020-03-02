@@ -13,7 +13,7 @@ This package requires the following system packages to be installed:
 
 Begin by installing this packages requirements:
 
-    pip install -e .
+    pip3 install -e .
 
 Finally copy the example configuration file `example.config.py`, and save it as `config.py`
 
@@ -36,8 +36,9 @@ You can now configure Sense-Hat-Snake in a few simple steps. Open `sensehatsnake
 
 It's really as simple as running the main file
 
-    sudo python sensehatsnake/main.py
+    sudo python3 sensehatsnake/main.py
 
 ### License
 
 Sense-Hat-Snake is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The original was created by Bradley Cornford bradcornford
